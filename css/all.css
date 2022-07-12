@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------*/
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+img{
+    vertical-align: middle;
+}
+.th{
+    font-size: 32px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.ts{
+    font-size: 24px;
+    margin-left: 16px;
+    vertical-align: top;
+    font-weight: bold;
+    color: #A00404;
+}
+.th-2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.ts-2{
+    font-size: 24px;
+    margin-left: 16px;
+    vertical-align: top;
+    font-weight: bold;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.bg41{
+    background: #415165;
+}
+/*-----------------------*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.infomation{
+    padding: 40px 0px 64px 0px;
+}
+.infomation h1{
+    font-size: 80px;
+    line-height: 95px;
+    padding-bottom: 22px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 48px;
+}
+.infomation img{
+    margin-bottom: 48px;
+}
+.infomation ul{
+    font-size: 24px;
+}
+.infomation ul:nth-of-type(2){
+    margin-bottom: 64px;
+}
+.education li:nth-of-type(1){
+    margin-bottom: 16px;
+}
+.skill-inside{
+    width: 996px;
+    padding: 24px 0px 40px 0px;
+    color: #ffffff;
+}
+.skill-inside h2{
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 40px;
+}
+.skill-inside ul{
+    margin: 0 auto;
+    border-left: 1px solid #96A9C4;
+    width: fit-content;
+}
+.skill-inside ul li{
+    font-size: 24px;
+    margin-bottom: 8px;
+    padding-left: 23px;
+}
+.skill-inside ul li:nth-of-type(7){
+    margin-bottom: 0px;
+}
+.experience{
+    padding: 64px 0px 80px 0px;
+}
+.experience ul{
+    margin-left: 24px;
+    border-left: 1px solid #96A9C4;
+    padding-left: 24px;
+}
+.experience h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.experience p{
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 642px;
+    font-weight: bold;
+}
+.contact-us{
+    padding: 24px 0px 40px 0px;
+    color: #ffffff;
+}
+.contact-us h2{
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 7px;
+    margin-bottom: 24px;
+}
+.contact-us ul li a{
+    font-size: 24px;
+    color: #ffffff;
+}
+.contact-us ul{
+    text-align: center;
+}
+.contact-us > ul > li:not(:last-child){
+    margin-bottom: 16px;
+}
+.contact-us .community li{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.community li:nth-of-type(2){
+    margin: 0px 24px;
+}
+
