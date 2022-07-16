@@ -1,85 +1,50 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+@import url("reset.css");
 /*-----------------------*/
-
 *,*::before,*::after{
     box-sizing: border-box;
-    text-decoration: none;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
+
+/* text-decoration: none; 不需要加在所有的元素上
+如果只有 a 標籤需要使用該屬性，就套用在 a 標籤上即可，
+套用在所有標籤 * 會造成網頁效能負擔。可以改為：
+a {
+  text-decoration: none; 
+} */
+
+a{
+    text-decoration: none;
+}
 img{
     vertical-align: middle;
 }
-.th{
+/*會建議能使用更符合 CSS 內容的方式進行命名
+因為目前內容不多，但若內容增加可能就會導致使用上混亂，
+會建議寫明，或建議能以標註的方式，
+後續處理資料的人能有方向~。註:原th ts th-2 ts-2 修改*/
+.h2-style-base{
     font-size: 32px;
     padding-bottom: 7px;
     border-bottom: 1px solid #000;
     margin-bottom: 16px;
     font-weight: bold;
 }
-.ts{
+.span-style-base{
     font-size: 24px;
     margin-left: 16px;
     vertical-align: top;
     font-weight: bold;
     color: #A00404;
 }
-.th-2{
+.h2-style-dark-bg{
     text-align: center;
     font-size: 32px;
     font-weight: bold;
 }
-.ts-2{
+.span-style-dark-bg{
     font-size: 24px;
     margin-left: 16px;
     vertical-align: top;
@@ -112,7 +77,7 @@ img{
 .infomation ul{
     font-size: 24px;
 }
-.infomation ul:nth-of-type(2){
+.infomation ul:nth-of-type(1){
     margin-bottom: 64px;
 }
 .education li:nth-of-type(1){
