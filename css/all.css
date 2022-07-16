@@ -1,3 +1,6 @@
+/* 這邊可以使用 @import 的方式，
+將 CSS-reset 的功能獨立一個檔案 
+@import CSS@规则，用于从其他样式表导入样式规则。*/
 @import url("reset.css");
 /*-----------------------*/
 *,*::before,*::after{
